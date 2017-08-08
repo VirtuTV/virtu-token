@@ -1,0 +1,19 @@
+{
+  "name": "panda-token",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Vincent Porta <vporta7@gmail.com> (http://www.vincentjporta.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "solc": "0.4.11",
+    "zeppelin-solidity": "1.2.0"
+  },
+  "devDependencies": {
+    "ethereumjs-testrpc": "3.0.5",
+    "scrypt": "6.0.3"
+  }
+}
