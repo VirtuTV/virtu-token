@@ -1,16 +1,10 @@
 pragma solidity ^0.4.11;
 
+import "zeppelin-solidity/contracts/crowdsale/Crowdsale.sol";
 import "zeppelin-solidity/contracts/crowdsale/CappedCrowdsale.sol";
 import "zeppelin-solidity/contracts/crowdsale/RefundableCrowdsale.sol";
 import "zeppelin-solidity/contracts/token/MintableToken.sol";
-
-contract VirtuToken is MintableToken {
-
-  string public constant name = "Virtucoin Crowdsale Token";
-  string public constant symbol = "VRTU";
-  uint8 public constant decimals = 18;
-
-}
+import './VirtuCoin.sol';
 
 /**
  * @title Virtu
@@ -37,7 +31,7 @@ contract VirtuCoinCrowdsale is CappedCrowdsale, RefundableCrowdsale {
   }
 
   function createTokenContract() internal returns (MintableToken) {
-    return new VirtuToken();
+    return new VirtuCoin();
   }
 
 }
